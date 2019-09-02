@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tambahrizki.heathtracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/profile_logo_"
+        android:label="Health Tracker"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RegisterActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="Health Tracker"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Workout.LevelActivity" />
+        <activity android:name=".Workout.RivewActivity" />
+        <activity android:name=".Workout.PlayActivity" />
+        <activity android:name=".Workout.PlayBeginActivity" />
+        <activity
+            android:name=".Workout.CompleteActivity"
+            android:label="Complete" />
+        <activity
+            android:name=".Note.TipsActivity"
+            android:label="Tips Sehat" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Profile" />
+        <activity android:name=".TentangActivity" android:parentActivityName=".MenuActivity"></activity>
+    </application>
+
+</manifest>

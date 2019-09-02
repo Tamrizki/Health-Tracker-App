@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".RegisterActivity">
+
+    <FrameLayout
+        android:layout_width="315dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.2"
+        android:background="@drawable/potrait"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/stroke"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:alpha="0.7"
+        android:paddingRight="12dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_nama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/stroke"
+        android:ems="10"
+        android:hint="Username"
+        android:alpha="0.7"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+
+    <!--<EditText-->
+        <!--android:id="@+id/txt_nama_lengkap"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="32dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:layout_marginEnd="32dp"-->
+        <!--android:background="@drawable/stroke"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Nama Lengkap"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:padding="8dp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textColorHint="#ffffff"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/txt_nama" />-->
+
+    <RadioGroup
+        android:alpha="0.7"
+        android:id="@+id/rdgrupJK"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nama">
+
+        <RadioButton
+            android:id="@+id/rdLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"
+            android:textColor="#ffffff"
+            android:checked="true"
+            android:padding="8dp"
+            android:buttonTint="#ffffff"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="172dp" />
+
+        <RadioButton
+            android:id="@+id/rdCewe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:buttonTint="#ffffff"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="186dp" />
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/txt_Password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/stroke"
+        android:ems="10"
+        android:hint="Usia"
+        android:inputType="number"
+        android:padding="8dp"
+        android:alpha="0.7"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdgrupJK"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_berat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/stroke"
+        android:ems="10"
+        android:hint="Berat Badan (Kg)"
+        android:inputType="number"
+        android:padding="8dp"
+        android:alpha="0.7"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Password" />
+
+    <EditText
+        android:id="@+id/txt_Tinggi"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/stroke"
+        android:ems="10"
+        android:hint="Tinggi Badan (Cm)"
+        android:inputType="number"
+        android:padding="8dp"
+        android:alpha="0.7"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_berat" />
+
+    <Button
+        android:id="@+id/buttonMasuk"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/stroke_bottom"
+        android:onClick="KlikMasuk"
+        android:text="Masuk"
+        android:alpha="0.8"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
